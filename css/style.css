@@ -1,0 +1,81 @@
+/*
+desde 0 hasta lo que se haya colocado en max-width
+@media only screen and (max-width: 375px) {} 
+*/
+* {
+    margin: 0;
+    padding: 0;
+    --azul: #001126;
+    font-family: 'Oxygen', sans-serif;
+}
+
+@media only screen and (max-width: 495px) {
+    body {
+        background: linear-gradient(160.65deg,
+                #66f2f2 -17.4%,
+                #44a9a9 48.96%,
+                #0354bc 143.34%);
+    }
+
+    header {
+        background: url(../img/fondos/header.png) no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        min-height: 100vh;
+        color: var(--azul);
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5rem 2rem;
+    }
+
+    .principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        width: 80%;
+        margin: 7rem 2.4rem 0rem 2.4rem;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+        text-transform: capitalize;
+        margin-bottom: 40px;
+        line-height: 39px;
+    }
+
+    .hero p{
+        font-size: 24px;
+    }
+
+    .hero img {
+        margin: 6rem 0;
+    }
+
+    .arthas{
+        text-align: center;
+        min-height: 100vh;
+    }
+
+    .arthas h2{
+        padding: 2rem 0;
+    }
+
+    .arthas img{
+        padding: 2rem 0;
+    }
+    
+    .arthas p{
+        font-size: 18px;
+        line-height: 29px;
+        margin: 0 2rem
+    }
+
+}
