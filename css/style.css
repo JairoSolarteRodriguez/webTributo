@@ -9,21 +9,23 @@ desde 0 hasta lo que se haya colocado en max-width
     font-family: 'Oxygen', sans-serif;
 }
 
-@media only screen and (max-width: 495px) {
-    body {
-        background: linear-gradient(160.65deg,
-                #66f2f2 -17.4%,
-                #44a9a9 48.96%,
-                #0354bc 143.34%);
-    }
+body {
+    background: linear-gradient(160.65deg,
+            #66f2f2 -17.4%,
+            #44a9a9 48.96%,
+            #0354bc 143.34%);
+}
 
-    header {
-        background: url(../img/fondos/header.png) no-repeat center;
-        background-size: cover;
-        background-attachment: fixed;
-        min-height: 100vh;
-        color: var(--azul);
-    }
+header {
+    background: url(../img/fondos/header.png) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: var(--azul);
+}
+
+@media only screen and (max-width: 495px) {
+    
 
     nav {
         display: flex;
@@ -66,10 +68,11 @@ desde 0 hasta lo que se haya colocado en max-width
 
     .arthas h2{
         padding: 2rem 0;
+        text-transform: capitalize;
     }
 
     .arthas img{
-        padding: 2rem 0;
+        padding: 1rem 0;
     }
     
     .arthas p{
@@ -78,4 +81,61 @@ desde 0 hasta lo que se haya colocado en max-width
         margin: 0 2rem
     }
 
+    .rey{
+        background: url(../img/fondos/rey.png) no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        min-height: 100vh;
+    }
+    
+    footer{
+        background: url(../img/fondos/footer.png) no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    footer p{
+        color: #FFF;
+        font-weight: 300;
+    }
+
+    .frase{
+        text-align: center;
+        color: #FFF;
+        font-size: 24px;
+        line-height: 33px;
+        text-transform: capitalize;
+        width: 240px;
+    }
+
+    .enlaces{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 50vh;
+        margin-top: 50px;
+    }
+
+    .enlaces a{
+        color: #000;
+        text-transform: uppercase;
+        text-decoration: none;
+        background: #65DAF5;
+        padding: 13px 0;
+        margin-bottom: 50px;
+        width: 320px;
+        border: 2px solid #0F0A0A;
+        box-sizing: border-box;
+        box-shadow: -4px 4px 14px rgba(0, 0, 0, 0.25);
+        border-radius: 90px;
+
+    }
 }
