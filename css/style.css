@@ -8,11 +8,11 @@
     scroll-behavior: smooth;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     width: 10px;
 }
 
-body::-webkit-scrollbar-thumb{
+body::-webkit-scrollbar-thumb {
     background: #44A9A9;
     border-radius: 50px;
 }
@@ -24,10 +24,64 @@ body {
             #0354bc 143.34%);
 }
 
+/* Video de fondo */
 header {
-    background: url(../img/fondos/header.png) no-repeat center;
-    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     background-attachment: fixed;
+}
+
+.leyenda {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+}
+
+.leyenda h1 {
+    color: #B8E5F8;
+    margin: 0;
+    text-align: center;
+    font-size: 45px;
+}
+
+.leyenda p {
+    color: #B8E5F8;
+    font-size: 30px;
+}
+
+.leyenda button img {
+    width: 3rem;
+}
+
+.logo {
+    width: 11rem;
+}
+
+.capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    opacity: 0.3;
+    /* mix-blend-mode: overlay; */
+}
+
+header {
+    /* background: url(../img/fondos/header.png) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed; */
     min-height: 100vh;
     color: var(--azul);
 }
@@ -39,7 +93,7 @@ nav {
     padding: 1.5rem 2rem;
 }
 
-nav ul{
+nav ul {
     display: none;
 }
 
@@ -67,7 +121,8 @@ nav ul{
 }
 
 .hero img {
-    margin: 6rem 0;
+    margin: 3em 0;
+    width: 5rem;
 }
 
 .arthas {
@@ -108,8 +163,12 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     text-align: center;
+}
+
+.copy{
+    margin-top: 10rem;
 }
 
 footer p {
@@ -138,9 +197,10 @@ footer p {
 
 .enlaces a {
     color: #000;
+    font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
-    background: #65DAF5;
+    background: #3B9EB5;
     padding: 13px 0;
     margin-bottom: 50px;
     width: 100%;
@@ -151,152 +211,154 @@ footer p {
 
 }
 
-.header-img img{
+.header-img img {
     display: none;
 }
 
-button{
+button {
     background: none;
     border: none;
 }
 
-@media only screen and (min-width: 768px){
-    .header-img img{
+@media only screen and (min-width: 768px) {
+    .header-img img {
         display: flex;
         width: 60%;
     }
 
-    .hero img{
+    .hero img {
         margin: 3rem auto;
     }
 
-    .arthas img{
+    .arthas img {
         width: 260px;
         height: 300px;
     }
 
-    .row img{
+    .row img {
         margin-top: 5rem;
     }
 
-    .flex{
+    .flex {
         width: 90%;
         margin: 5rem auto;
     }
 
-    .flex h2{
+    .flex h2 {
         font-size: 3em;
     }
 
-    .flex p{
+    .flex p {
         font-size: 1.6rem;
     }
 }
 
-@media only screen and (min-width: 1200px){
-    header{
+@media only screen and (min-width: 1200px) {
+    header {
         padding: 1rem;
     }
 
-    nav{
+    nav {
         background: rgba(0, 0, 0, 0.21);
         border-radius: 25px;
     }
 
-    nav ul{
+    nav ul {
         display: flex;
         width: 50%;
         justify-content: flex-end;
     }
 
-    nav ul li{
+    nav ul li {
         list-style-type: none;
         margin-right: 1.3rem;
     }
 
-    nav ul li a{
+    nav ul li a {
         text-decoration: none;
         color: var(--azul-claro);
         font-weight: bold;
         font-size: 22px;
     }
 
-    nav ul li a:hover{
+    nav ul li a:hover {
         color: #89d0d0;
     }
 
-    .hero{
+    .hero {
         margin: 1rem 2.4rem 0rem 2.4rem;
         width: 70%;
     }
 
-    .hero img{
+    .hero img {
         margin: 2rem 0;
     }
 
-    .hamburger-menu{
+    .hamburger-menu {
         display: none;
     }
 
-    .header-img img{
+    .header-img img {
         display: block;
         margin-top: 3rem;
         width: 500px;
         border-radius: 50%;
     }
 
-    .header-img div{
+    .header-img div {
         width: 40%;
     }
 
-    .header-img{
+    .header-img {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-top: 3rem;
     }
-    #arthas .flex img{
+
+    #arthas .flex img {
         height: 772px;
     }
 
-    .flex{
+    .flex {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
     }
 
-    .flex div p{
+    .flex div p {
         font-size: 24px;
     }
-    
-    .flex div h1{
-        font-size: 36px;    
+
+    .flex div h1 {
+        font-size: 36px;
     }
 
-    .flex img{
+    .flex img {
         width: 50%;
         height: 100%;
         border-radius: 0;
         margin: 2rem;
     }
 
-    .row{
+    .row {
         flex-direction: row;
     }
 
-    .enlaces{
+    .enlaces {
         display: flex;
     }
 
-    .enlaces a{
+    .enlaces a {
         margin: 1rem;
     }
-    .frase{
+
+    .frase {
         font-size: 36px;
         width: 100%;
     }
 
-    .imagenes{
+    .imagenes {
         background: rgba(73, 145, 207, 0.3);
         max-height: 80vh;
         border-radius: 30px;
@@ -304,18 +366,18 @@ button{
         display: flex;
     }
 
-    .imagenes img{
-        max-width: 90%;
+    .imagenes img {
+        max-width: 77%;
         margin: 2rem auto;
         border-radius: 30px;
     }
 
-    #back{
+    #back {
         transform: rotate(-180deg);
     }
 
     #back,
-    #next{
+    #next {
         width: 120px;
     }
 }
