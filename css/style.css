@@ -9,7 +9,7 @@
 }
 
 body::-webkit-scrollbar{
-    width: 7px;
+    width: 10px;
 }
 
 body::-webkit-scrollbar-thumb{
@@ -37,9 +37,6 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 2rem;
-    /* Estilos no permanentes */
-    /* position: fixed;
-    width: 85vw; */
 }
 
 nav ul{
@@ -158,6 +155,44 @@ footer p {
     display: none;
 }
 
+button{
+    background: none;
+    border: none;
+}
+
+@media only screen and (min-width: 768px){
+    .header-img img{
+        display: flex;
+        width: 60%;
+    }
+
+    .hero img{
+        margin: 3rem auto;
+    }
+
+    .arthas img{
+        width: 260px;
+        height: 300px;
+    }
+
+    .row img{
+        margin-top: 5rem;
+    }
+
+    .flex{
+        width: 90%;
+        margin: 5rem auto;
+    }
+
+    .flex h2{
+        font-size: 3em;
+    }
+
+    .flex p{
+        font-size: 1.6rem;
+    }
+}
+
 @media only screen and (min-width: 1200px){
     header{
         padding: 1rem;
@@ -196,7 +231,7 @@ footer p {
     }
 
     .hero img{
-        margin: 3rem 0;
+        margin: 2rem 0;
     }
 
     .hamburger-menu{
@@ -218,9 +253,10 @@ footer p {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-top: 3rem;
     }
     #arthas .flex img{
-        height: 816px;
+        height: 772px;
     }
 
     .flex{
@@ -262,27 +298,20 @@ footer p {
 
     .imagenes{
         background: rgba(73, 145, 207, 0.3);
+        max-height: 80vh;
         border-radius: 30px;
-        width: 1620px;
-        height: 784px;
         margin: 0.9rem auto;
         display: flex;
     }
 
     .imagenes img{
         max-width: 90%;
-        height: 90%;
         margin: 2rem auto;
         border-radius: 30px;
     }
 
     #back{
         transform: rotate(-180deg);
-    }
-
-    .imagenes button{
-        background: none;
-        border: none;
     }
 
     #back,
