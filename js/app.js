@@ -46,10 +46,12 @@ var imgDesktop = [
     'img/arthas vs illidan.jpg'
 ];
 
-let num = 0;
-let atras = document.getElementById('back');
-let adelante = document.getElementById('next');
-let ancho = document.documentElement.clientWidth;
+let num = 0,
+atras = document.getElementById('back'),
+adelante = document.getElementById('next'),
+ancho = document.documentElement.clientWidth;
+
+
 
 adelante.addEventListener('click',() => {
     let img = document.getElementById('img-principal');
