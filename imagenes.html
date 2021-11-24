@@ -8,24 +8,38 @@
     <link rel="stylesheet" href="css/img.css">
     <title>Galeria de imagenes</title>
 </head>
-<body>
+<body onload="tamanio()" onresize="tamanio()">
     <header>
-        <nav>
-            <a href="#"><img src="img/LichKing.svg"></a>
-            <img src="img/menuMobile.svg" class="hamburger-menu">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="index.html#arthas">Arthas</a></li>
-                <li><a href="index.html#rey">Ex&aacute;nime</a></li>
-                <li><a href="index.html#invencible">Invencible</a></li>
-                <li><a href="#">Im&aacute;genes</a></li>
-            </ul>
+        <nav class>
+            <a href="#"><img src="img/LichKing2.svg" class="logo"></a>
+            <!-- <img src="img/menuMobile2.svg" class="hamburger-menu"> -->
+
+            <div class="dropdown">
+                <button class="dropdown-btn" id="btn-menu"></button>
+                <ul class="d-none" id="nav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#arthas">Arthas</a></li>
+                    <li><a href="index.html#rey">Ex&aacute;nime</a></li>
+                    <li><a href="index.html#invencible">Invencible</a></li>
+                    <li><a href="#">Im&aacute;genes</a></li>
+                </ul>
+            </div>
         </nav>
+
         <div class="imagenes">
-            <button><img src="img/back.svg" alt="" id="back"></button>
-            <img src="img/arthas-cool.jpg" alt="">
-            <button><img src="img/back.svg" alt="" id="next"></button>
+            <button id="back"><img src="img/back.svg" alt=""></button>
+
+            <div id="img-dinamicas">
+            </div>
+            <!-- <picture id="picture">
+                <source srcset="img/artas-header.jpg" media="(max-width: 1200px)">
+                <img src="img/arthas vs illidan dark.jpg" alt="" id="img-principal">
+            </picture> -->
+            
+            <button id="next"><img src="img/back.svg" alt=""></button>
         </div>
     </header>
+
+    <script src="js/app.js"></script>
 </body>
 </html>

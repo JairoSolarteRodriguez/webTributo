@@ -11,24 +11,31 @@
     <title>Arthas Menethil - El Rey Ex&aacute;nime</title>
 </head>
 <body>
+    <!-- ENCABEZADO -->
     <header>
+        <!-- VIDEO DE FONDO DEL ENCABEZADO -->
         <video muted autoplay loop src="videos/wotlk.mp4" type="video/mp4"></video>
         <div class="capa"></div>
+        <!-- BARRA DE NAVEGACION -->
         <nav class="leyenda">
             <a href="#"><img src="img/LichKing.svg" class="logo"></a>
-            <button><img src="img/menuMobile.svg" class="hamburger-menu"></button>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#arthas">Arthas</a></li>
-                <li><a href="#rey">Ex&aacute;nime</a></li>
-                <li><a href="#invencible">Invencible</a></li>
-                <li><a href="imagenes.html">Im&aacute;genes</a></li>
-            </ul>
+
+            <div class="dropdown">
+                <button class="dropdown-btn" id="btn-menu"></button>
+                <ul class="d-none" id="nav">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#arthas">Arthas</a></li>
+                    <li><a href="#rey">Ex&aacute;nime</a></li>
+                    <li><a href="#invencible">Invencible</a></li>
+                    <li><a href="imagenes.html">Im&aacute;genes</a></li>
+                </ul>
+            </div>
         </nav>
+        <!-- SECCION PRINCIPAL DEL HEADER -->
         <section class="principal leyenda">
             <div class="hero">
                 <div class="header-img">
-                    <div class="">
+                    <div>
                         <h1>larga vida al rey</h1>
                         <p>Tu coraz&oacute;n... Su constante palpitar, ¡me da asco! Lo acallar&eacute;, como hice con el m&iacute;o.</p>
                     </div>
@@ -39,6 +46,7 @@
             </div>
         </section>
     </header>
+    <!-- CONTENIDO PRINCIPAL -->
     <main>
         <section class="arthas" id="arthas">
             <div class="flex">
@@ -51,6 +59,7 @@
                 </div>
             </div>
         </section>
+
         <section class="arthas rey" id="rey">
             <div class="flex row">
                 <img src="img/rey.jfif">
@@ -60,6 +69,7 @@
                 </div>
             </div>
         </section>
+
         <section class="arthas invencible" id="invencible">
             <div class="flex">
                 <img src="img/invencible.jfif">
@@ -70,7 +80,9 @@
             </div>
         </section>
     </main>
+    <!-- PIE DE PAGINA -->
     <footer>
+        <!-- BOTONES DE NAVEGACION -->
         <div class="enlaces row">
             <a href="imagenes.html">ver galeria de imagenes</a>
             <a href="#">ver galeria de videos</a>
@@ -81,5 +93,7 @@
         <p class="copy">Hecho por Jairo Solarte<br>
         &copy; Copyright 2021 - Todos los derechos reservados.</p>
     </footer>
+    
+    <script src="js/app.js"></script>
 </body>
 </html>
