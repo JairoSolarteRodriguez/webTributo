@@ -28,13 +28,22 @@ document.addEventListener("click", function (e) {
 var imgMobile = [
     'img/artas-header.jpg',
     'img/arthas.jfif',
-    'img/dk.jpg'
+    'img/dk.jpg',
+    'img/arthas1.jpg',
+    'img/arthas2.jpg',
+    'img/arthas3.jpg',
+    'img/arthas4.jpg',
+    'img/arthas5.png',
+    'img/arthas6.jpg',
 ];
 
 var imgDesktop = [
     'img/arthas vs illidan dark.jpg',
     'img/arthas.png',
-    'img/arthas-cool.jpg'
+    'img/arthas-cool.jpg',
+    'img/arthas.jpg',
+    'img/arthasd1.jpg',
+    'img/arthas vs illidan.jpg'
 ];
 
 let num = 0;
