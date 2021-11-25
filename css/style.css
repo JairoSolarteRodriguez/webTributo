@@ -511,5 +511,6 @@ button {
     #back,
     #next {
         width: 120px;
+        cursor: pointer;
     }
 }
