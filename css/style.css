@@ -514,3 +514,9 @@ button {
         cursor: pointer;
     }
 }
+
+@media only screen and (min-width: 1366px) and (max-width: 1440px) {
+    .header-img img{
+        width: 323px;
+    }
+}
