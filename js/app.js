@@ -98,3 +98,5 @@ function tamanio(){
         content.innerHTML = '<img src="img/artas-header.jpg" alt="" id="img-principal">';
     }
 }
+
+console.log('Hola mundo desde logic');
