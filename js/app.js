@@ -17,7 +17,7 @@ btnMenu.addEventListener('click', () => {
 document.addEventListener("click", function (e) {
     /*obtiendo informacion del DOM para verificar si hacen click fuera
     del documento para quitar los estilos y evitar errores.*/
-    var clic = e.target;
+    let clic = e.target;
 
     if (clic != btnMenu) {
         ocultar();
@@ -25,7 +25,7 @@ document.addEventListener("click", function (e) {
 });
 
 // carrusel dependiendo el tamaño de la imagen
-var imgMobile = [
+let imgMobile = [
     'img/artas-header.jpg',
     'img/arthas.jfif',
     'img/dk.jpg',
@@ -37,7 +37,7 @@ var imgMobile = [
     'img/arthas6.jpg',
 ];
 
-var imgDesktop = [
+let imgDesktop = [
     'img/arthas vs illidan dark.jpg',
     'img/arthas.png',
     'img/arthas-cool.jpg',
@@ -94,7 +94,9 @@ function tamanio(){
     if(ancho > 1100){
         content.innerHTML = '<img src="img/arthas vs illidan dark.jpg" alt="" id="img-principal">';
         
-    }else if(ancho < 1024){
+    }else if(ancho < 1100){
         content.innerHTML = '<img src="img/artas-header.jpg" alt="" id="img-principal">';
     }
 }
+
+console.log('hola mundo');
